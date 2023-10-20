@@ -100,4 +100,4 @@ format_error(no_cert) ->
 format_error(reuseport_local) ->
 	"num_listen_sockets must be set to 1 for local sockets";
 format_error(Reason) ->
-	inet:format_error(Reason).
+	ssl:format_error(Reason).
